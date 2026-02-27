@@ -53,7 +53,7 @@ const server = http.createServer(async (req, res) => {
     res.writeHead(200, { "Content-Type": "text/html" });
     res.end("<h1>Authenticated. Close this tab.</h1>");
     console.log("Tokens saved to", TOKEN_PATH);
-    console.log("You're good to go. Restart Claude Code to use the gmail MCP.\n");
+    console.log("You're good to go. Restart your MCP client to use the gmail server.\n");
     setTimeout(() => process.exit(0), 500);
   } catch (err) {
     res.writeHead(500, { "Content-Type": "text/html" });
