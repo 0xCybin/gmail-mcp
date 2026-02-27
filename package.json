@@ -1,0 +1,20 @@
+{
+  "name": "gmail-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for Gmail access",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "enroll": "tsc && node dist/enroll.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "googleapis": "^146.0.0",
+    "dotenv": "^16.4.7",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0"
+  }
+}
